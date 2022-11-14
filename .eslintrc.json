@@ -13,7 +13,7 @@
   },
   "plugins": ["react"],
   "rules": {
-    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": "warn",
     "import/order": [
       "error",
       {
@@ -33,6 +33,6 @@
         "pathGroupsExcludedImportTypes": ["react"]
       }
     ],
-    "no-console": "error"
+    "no-console": "warn"
   }
 }

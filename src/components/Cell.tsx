@@ -1,14 +1,26 @@
 import React from 'react'
 
-import { Box } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 
-import '../styles/Cell.css'
+type Value = 'X' | 'O' | null
 
-function Cell(): JSX.Element {
+type Props = {
+  value: Value
+  onClick: () => void
+  highlight: boolean
+}
+
+function Cell({ value, onClick, highlight }: Props): JSX.Element {
   return (
-    <Box w="33rem" h="33rem" bg="gray.50">
-      -
-    </Box>
+    <Flex
+      onClick={onClick}
+      w="100px"
+      h="100px"
+      justify="center"
+      align="center"
+      bg={highlight ? 'green.100' : 'gren.100'}>
+      {value ? value : '-'}
+    </Flex>
   )
 }
 
