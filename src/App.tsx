@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-import "./styles/App.css";
-import Board from "./components/Board";
-import { Box } from "@chakra-ui/react";
+import './styles/App.css'
 
-function App() {
-  return <Board />;
+import Board from './components/Board'
+
+function App(): JSX.Element {
+  return <Board />
 }
 
-export default App;
+export default App
